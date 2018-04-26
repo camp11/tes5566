@@ -1753,7 +1753,8 @@ if($message['type']=='text') {
 )
             )
         );
-		$balas = array(
+		    
+	$balas = array(
             'replyToken' => $replyToken,
             'messages' => array(
                 array (
