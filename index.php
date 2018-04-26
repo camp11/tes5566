@@ -1754,25 +1754,13 @@ if($message['type']=='text') {
   array (
     0 => 
     array (
-      'type' => 'uri',
-      'linkUri' => '',
-      'area' => 
-      array (
-        'x' => 0,
-        'y' => 0,
-        'width' => 0,
-        'height' => 0,
-      ),
-    ),
-    1 => 
-    array (
       'type' => 'message',
       'text' => 'flag',
       'area' => 
       array (
-        'x' => 0,
+        'x' => 520,
         'y' => 0,
-        'width' => 1040,
+        'width' => 520,
         'height' => 1040,
       ),
     ),
@@ -1790,7 +1778,7 @@ if($message['type']=='text') {
             'replyToken' => $replyToken,
             'messages' => array(
                 array (
-  'type' => 'image',
+  'type' => 'video',
   'originalContentUrl' => 'https://res.cloudinary.com/tes5566/video/upload/v1524724365/line/Bot/video/2018_04_26_13_09_51.mp4',
   'previewImageUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1524725537/line/Bot/video/20180426_130843.jpg',
 )
