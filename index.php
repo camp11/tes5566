@@ -1736,6 +1736,37 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
+	    if ($command == 'Fis' || $command == 'fis' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array (
+  'type' => 'imagemap',
+  'baseUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1524724017/line/Bot/visi',
+  'altText' => 'Visi & Misi FIS',
+  'baseSize' => 
+  array (
+    'height' => 1040,
+    'width' => 1040,
+  ),
+)
+            )
+        );
+		$balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array (
+  'type' => 'video',
+  'originalContentUrl' => 'https://res.cloudinary.com/tes5566/video/upload/v1524724365/line/Bot/video/2018_04_26_13_09_51.mp4',
+  'previewImageUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1524725537/line/Bot/video/20180426_130843.jpg',
+))
+            )
+        );
+    }
+}
+//pesan bergambar
+if($message['type']=='text') {
 	    if ($command == '/shalat') {
 
         $result = shalat($options);
