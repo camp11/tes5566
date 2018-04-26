@@ -1742,26 +1742,20 @@ if($message['type']=='text') {
             'replyToken' => $replyToken,
             'messages' => array(
                 array (
-  'type' => 'imagemap',
-  'baseUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1524724017/line/Bot/visi',
-  'altText' => 'Visi & Misi FIS',
-  'baseSize' => 
-  array (
-    'height' => 1040,
-    'width' => 1040,
-  ),
+  'type' => 'image',
+  'originalContentUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1524552956/line/Bot/Example/1040.jpg',
+  'previewImageUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1524552946/line/Bot/Example/240.jpg',
 )
             )
         );
-		    
-	$balas = array(
+                array(
             'replyToken' => $replyToken,
             'messages' => array(
                 array (
   'type' => 'video',
   'originalContentUrl' => 'https://res.cloudinary.com/tes5566/video/upload/v1524724365/line/Bot/video/2018_04_26_13_09_51.mp4',
   'previewImageUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1524725537/line/Bot/video/20180426_130843.jpg',
-))
+)
             )
         );
     }
