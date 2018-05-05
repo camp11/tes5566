@@ -1456,21 +1456,6 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Wc' || $command == 'wc' ) {
-
-        $balas = array(
-            'replyToken' => $replyToken,
-            'messages' => array(
-                array(
-                    'type' => 'text',
-                    'text' => 'Selamat datang di room kami kk - Semoga Betah yah! - salken dari saya ->'.$profil->displayName
-                )
-            )
-        );
-    }
-}
-//pesan bergambar
-if($message['type']=='text') {
 	    if ($command == 'gila' || $command == 'peak' ) {
 
         $balas = array(
