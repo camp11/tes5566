@@ -664,6 +664,28 @@ if ($type == 'join' || $command == 'Help') {
         )
     );
 }
+#-------------------------[Function]-------------------------#
+//show menu, saat join dan command,menu
+if ($type == 'join' || $command == 'Wc') {
+    $text .= "====[HALLO WELCOME]====";
+    $text .= " \n";
+    $text .= "     Selamat datang diROOM\n";
+    $text .= "=======================\n";	
+    $text .= "     FIS FAMILY\n";	
+    $text .= "F͛A͛M͛I͛L͛Y͛ I͛N͛D͛O͛N͛E͛S͛I͛A͛N͛ S͛M͛U͛L͛E͛\n";
+    $text .= "=======================\n";	
+    $text .= "  Jangan Lupa Cek Note ya\n";
+    $text .= "[Salken dari Saya]->$profil->displayName\n";
+    $balas = array(
+        'replyToken' => $replyToken,
+        'messages' => array(
+            array(
+                'type' => 'text',
+                'text' => $text
+            )
+        )
+    );
+}
 if($message['type']=='text') {
 	    if ($command == '/qiblat') {
         $hasil = qibla($options);
@@ -1261,8 +1283,7 @@ if($message['type']=='text') {
             'messages' => array(
                 array(
                     'type' => 'text',
-                    'text' => $profil->displayName.
-					'Apa Woy Manggil Manggil??'
+                    'text' => 'Apa Woy Manggil Manggil??'.$profil->displayName
                 )
             )
         );
@@ -1277,9 +1298,8 @@ if($message['type']=='text') {
             'messages' => array(
                 array(
                     'type' => 'text',
-                    'text' => $profil->displayName.
-					'Ada apa sebut saya??'
-                )
+                    'text' => 'Ada apa sebut saya??'.$profil->displayName.
+                ) 
             )
         );
     }
