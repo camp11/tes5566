@@ -1283,7 +1283,7 @@ if($message['type']=='text') {
             'messages' => array(
                 array(
                     'type' => 'text',
-                    'text' => 'Apa Woy Manggil Manggil??'.$profil->displayName
+                    'text' => 'Apa Woy Manggil Manggil?? '.$profil->displayName
                 )
             )
         );
@@ -1298,7 +1298,7 @@ if($message['type']=='text') {
             'messages' => array(
                 array(
                     'type' => 'text',
-                    'text' => 'Ada apa sebut saya??'.$profil->displayName.
+                    'text' => 'Ada apa sebut saya?? '.$profil->displayName
                 ) 
             )
         );
