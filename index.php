@@ -1772,7 +1772,7 @@ if($message['type']=='text') {
     1 => 
     array (
       'type' => 'message',
-      'text' => '',
+      'text' => 'anniv',
       'area' => 
       array (
         'x' => 520,
