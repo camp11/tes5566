@@ -669,9 +669,9 @@ if ($type == 'join' || $command == 'Help') {
 if ($type == 'join' || $command == 'Wc') {
     $text .= "====[HALLO WELCOME]====";
     $text .= " \n";
-    $text .= "       Selamat datang di\n";
+    $text .= "       ⤵Selamat Datang di⤵\n";
     $text .= "=======================\n";	
-    $text .= "       >MAIN ROOM<\n";	
+    $text .= "      >ⓜⓐⓘⓝ ⓡⓞⓞⓜ<\n";	
     $text .= "F͛A͛M͛I͛L͛Y͛ I͛N͛D͛O͛N͛E͛S͛I͛A͛N͛ S͛M͛U͛L͛E͛\n";
     $text .= "=======================\n";	
     $text .= "  Jangan Lupa Cek Note ya\n";
