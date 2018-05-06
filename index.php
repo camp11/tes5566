@@ -1741,7 +1741,7 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'anniv' || $command == 'bday' ) {
+	    if ($command == 'Anniv' || $command == 'bday' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
