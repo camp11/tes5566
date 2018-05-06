@@ -1334,6 +1334,22 @@ if($message['type']=='text') {
         );
     }
 }
+
+//pesan bergambar
+if($message['type']=='text') {
+	    if ($command == 'Assalamualaikum' || $command == 'Assalamualaikum wr wb' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array(
+                    'type' => 'text',
+                    'text' => 'Waalaikumsalam '.$profil->displayName
+                )
+            )
+        );
+    }
+}
 //pesan bergambar
 if($message['type']=='text') {
 	    if ($command == 'Sore' || $command == 'sore' ) {
