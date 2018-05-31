@@ -1416,8 +1416,7 @@ if($message['type']=='text') {
 
         $balas = array(
             'replyToken' => $replyToken,
-            'messages' => array(
-                array (
+            'messages' => array (
   'type' => 'template',
   'altText' => 'This is a buttons template',
   'template' => 
