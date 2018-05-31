@@ -1412,6 +1412,58 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
+	    if ($command == 'C' || $command == 'c' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array (
+  'type' => 'template',
+  'altText' => 'This is a buttons template',
+  'template' => 
+  array (
+    'type' => 'buttons',
+    'thumbnailImageUrl' => 'https://example.com/bot/images/image.jpg',
+    'imageAspectRatio' => 'rectangle',
+    'imageSize' => 'cover',
+    'imageBackgroundColor' => '#FFFFFF',
+    'title' => 'Menu',
+    'text' => 'Please select',
+    'defaultAction' => 
+    array (
+      'type' => 'uri',
+      'label' => 'View detail',
+      'uri' => 'http://example.com/page/123',
+    ),
+    'actions' => 
+    array (
+      0 => 
+      array (
+        'type' => 'postback',
+        'label' => 'Buy',
+        'data' => 'action=buy&itemid=123',
+      ),
+      1 => 
+      array (
+        'type' => 'postback',
+        'label' => 'Add to cart',
+        'data' => 'action=add&itemid=123',
+      ),
+      2 => 
+      array (
+        'type' => 'uri',
+        'label' => 'View detail',
+        'uri' => 'http://example.com/page/123',
+      ),
+    ),
+  ),
+)
+            )
+        );
+    }
+}
+//pesan bergambar
+if($message['type']=='text') {
 	    if ($command == 'Hi' || $command == 'hai' ) {
 
         $balas = array(
