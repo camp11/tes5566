@@ -1983,6 +1983,42 @@ if($message['type']=='text') {
     0 => 
     array (
       'type' => 'message',
+      'text' => 'Lebaran1',
+      'area' => 
+      array (
+        'x' => 520,
+        'y' => 0,
+        'width' => 520,
+        'height' => 1040,
+      ),
+    ),
+  ),
+)
+            )
+        );
+    }
+}
+//pesan bergambar
+if($message['type']=='text') {
+	    if ($command == 'Lebaran1' || $command == 'idul1' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array (
+  'type' => 'imagemap',
+  'baseUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1528977520/line/Bot/Lebran1',
+  'altText' => 'Selamat Hari Raya Idul Fitri Mohon Maaf Lahir & Bathin',
+  'baseSize' => 
+  array (
+    'height' => 1040,
+    'width' => 1040,
+  ),
+  'actions' => 
+  array (
+    0 => 
+    array (
+      'type' => 'message',
       'text' => 'Lebaran',
       'area' => 
       array (
