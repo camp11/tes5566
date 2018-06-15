@@ -1964,7 +1964,7 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Lebaran' || $command == 'idul' ) {
+	    if ($command == 'Selamat' || $command == 'lebaran' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
