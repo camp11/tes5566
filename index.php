@@ -1856,15 +1856,15 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Puasa' || $command == 'puasa' ) {
+	    if ($command == 'Assalamualaikum' || $command == 'Assalam' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
             'messages' => array(
                 array (
   'type' => 'imagemap',
-  'baseUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1526133379/line/Bot/Puasa',
-  'altText' => 'SELAMAT BERPUASA FIS FAMILY',
+  'baseUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1529894470/line/Bot/assalamualaikum',
+  'altText' => 'Assalamualaikum Selamat Pagi',
   'baseSize' => 
   array (
     'height' => 1040,
@@ -1892,7 +1892,7 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Buka' || $command == 'buka puasa' ) {
+	    if ($command == 'aaaa' || $command == 'aaa' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
@@ -2055,7 +2055,7 @@ if($message['type']=='text') {
     0 => 
     array (
       'type' => 'message',
-      'text' => 'Pagi',
+      'text' => 'Assalamualaikum',
       'area' => 
       array (
         'x' => 520,
