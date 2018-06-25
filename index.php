@@ -2036,15 +2036,15 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Goda' || $command == 'haus' ) {
+	    if ($command == 'Selamat' || $command == 'Semangat' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
             'messages' => array(
                 array (
   'type' => 'imagemap',
-  'baseUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1526287217/line/goda',
-  'altText' => 'Kamu kuat kan puasanya ?',
+  'baseUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1529893504/line/Bot/Semangat',
+  'altText' => 'Semangat Pagi kawan!',
   'baseSize' => 
   array (
     'height' => 1040,
@@ -2055,7 +2055,7 @@ if($message['type']=='text') {
     0 => 
     array (
       'type' => 'message',
-      'text' => 'Goda',
+      'text' => 'Pagi',
       'area' => 
       array (
         'x' => 520,
@@ -2072,15 +2072,15 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Goda1' || $command == 'goda1' ) {
+	    if ($command == 'Pagi' || $command == 'Morning' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
             'messages' => array(
                 array (
   'type' => 'imagemap',
-  'baseUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1526287910/line/goda1',
-  'altText' => 'Kamu kuat kan puasanya ?',
+  'baseUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1529893193/line/Bot/pagi',
+  'altText' => 'Good Morning',
   'baseSize' => 
   array (
     'height' => 1040,
@@ -2091,7 +2091,7 @@ if($message['type']=='text') {
     0 => 
     array (
       'type' => 'message',
-      'text' => 'Goda1',
+      'text' => 'Selamat',
       'area' => 
       array (
         'x' => 520,
