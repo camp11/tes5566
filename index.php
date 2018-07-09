@@ -1856,6 +1856,42 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
+	    if ($command == 'Besties' || $command == 'duet' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array (
+  'type' => 'imagemap',
+  'baseUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1531116793/Besties',
+  'altText' => 'Duet Besties Season 2',
+  'baseSize' => 
+  array (
+    'height' => 1040,
+    'width' => 1040,
+  ),
+  'actions' => 
+  array (
+    0 => 
+    array (
+      'type' => 'message',
+      'text' => 'Besties',
+      'area' => 
+      array (
+        'x' => 520,
+        'y' => 0,
+        'width' => 520,
+        'height' => 1040,
+      ),
+    ),
+  ),
+)
+            )
+        );
+    }
+}
+//pesan bergambar
+if($message['type']=='text') {
 	    if ($command == 'aaaa' || $command == 'aaa' ) {
 
         $balas = array(
