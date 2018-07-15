@@ -1892,15 +1892,15 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'aaaa' || $command == 'aaa' ) {
+	    if ($command == 'Oke' || $command == 'Sip' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
             'messages' => array(
                 array (
   'type' => 'imagemap',
-  'baseUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1526285679/line/buka',
-  'altText' => 'SELAMAT BERBUKA PUASA',
+  'baseUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1531659910/Stiker jempol',
+  'altText' => 'Mantaap',
   'baseSize' => 
   array (
     'height' => 1040,
@@ -1911,7 +1911,7 @@ if($message['type']=='text') {
     0 => 
     array (
       'type' => 'message',
-      'text' => 'Buka',
+      'text' => 'Oke',
       'area' => 
       array (
         'x' => 520,
