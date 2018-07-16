@@ -2368,6 +2368,21 @@ if($message['type']=='text') {
 	}
 	
 }
+if($message['type']=='sticker')
+{	
+	$balas = array(
+							'UserID' => $profil->userId,	
+                                                        'replyToken' => $replyToken,							
+							'messages' => array(
+								array(
+										'type' => 'text',									
+										'text' => 'Apaan sticker mulu.'										
+									
+									)
+							)
+						);
+						
+}
 else
 $pesan=str_replace(" ", "%20", $pesan_datang);
 $key = '8d72745c-a69d-4bfa-816e-010d14860263'; //API SimSimi
@@ -2376,6 +2391,51 @@ $json_data = file_get_contents($url);
 $url=json_decode($json_data,1);
 $diterima = $url['response'];
 if($message['type']=='text')
+{
+if($url['result'] == 404)
+	{
+		$balas = array(
+							'UserID' => $profil->userId,	
+                                                        'replyToken' => $replyToken,													
+							'messages' => array(
+								array(
+										'type' => 'text',					
+										'text' => 'Mohon Gunakan Bahasa Indonesia Yang Benar :D.'
+									)
+							)
+						);
+				
+	}
+else
+if($url['result'] != 100)
+	{
+		
+		
+		$balas = array(
+							'UserID' => $profil->userId,
+                                                        'replyToken' => $replyToken,														
+							'messages' => array(
+								array(
+										'type' => 'text',					
+										'text' => 'Maaf '.$profil->displayName.' Server Kami Sedang Sibuk Sekarang.'
+									)
+							)
+						);
+				
+	}
+	else{
+		$balas = array(
+							'UserID' => $profil->userId,
+                                                        'replyToken' => $replyToken,														
+							'messages' => array(
+								array(
+										'type' => 'text',					
+										'text' => ''.$diterima.''
+									)
+							)
+						);
+						
+	}
 }
 
 if (isset($balas)) {
