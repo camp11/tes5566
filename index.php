@@ -2383,60 +2383,6 @@ if($message['type']=='sticker')
 						);
 						
 }
-else
-$pesan=str_replace(" ", "%20", $pesan_datang);
-$key = 'f69ebdf1-1aae-4776-804a-1d0d9cb0653f'; //API SimSimi
-$url = 'http://sandbox.api.simsimi.com/request.p?key='.$key.'&lc=id&ft=1.0&text='.$pesan;
-$json_data = file_get_contents($url);
-$url=json_decode($json_data,1);
-$diterima = $url['response'];
-if($message['type']=='text')
-{
-if($url['result'] == 404)
-	{
-		$balas = array(
-							'UserID' => $profil->userId,	
-                                                        'replyToken' => $replyToken,													
-							'messages' => array(
-								array(
-										'type' => 'text',					
-										'text' => 'Mohon Gunakan Bahasa Indonesia Yang Benar :D.'
-									)
-							)
-						);
-				
-	}
-else
-if($url['result'] != 100)
-	{
-		
-		
-		$balas = array(
-							'UserID' => $profil->userId,
-                                                        'replyToken' => $replyToken,														
-							'messages' => array(
-								array(
-										'type' => 'text',					
-										'text' => '  '
-									)
-							)
-						);
-				
-	}
-	else{
-		$balas = array(
-							'UserID' => $profil->userId,
-                                                        'replyToken' => $replyToken,														
-							'messages' => array(
-								array(
-										'type' => 'text',					
-										'text' => ''.$diterima.''
-									)
-							)
-						);
-						
-	}
-}
 
 if (isset($balas)) {
     $result = json_encode($balas);
