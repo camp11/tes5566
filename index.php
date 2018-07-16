@@ -2368,6 +2368,61 @@ if($message['type']=='text') {
 	}
 	
 }
+else
+$pesan=str_replace(" ", "%20", $pesan_datang);
+$key = 'b5aa3723-6a95-42e6-9a8d-2de342d930cc'; //API SimSimi
+$url = 'http://sandbox.api.simsimi.com/request.p?key='.$key.'&lc=id&ft=1.0&text='.$pesan;
+$json_data = file_get_contents($url);
+$url=json_decode($json_data,1);
+$diterima = $url['response'];
+if($message['type']=='text')
+{
+if($url['result'] == 404)
+	{
+		$balas = array(
+							'UserID' => $profil->userId,	
+                                                        'replyToken' => $replyToken,													
+							'messages' => array(
+								array(
+										'type' => 'text',					
+										'text' => 'Mohon Gunakan Bahasa Indonesia Yang Benar :D.'
+									)
+							)
+						);
+				
+	}
+else
+if($url['result'] != 100)
+	{
+		
+		
+		$balas = array(
+							'UserID' => $profil->userId,
+                                                        'replyToken' => $replyToken,														
+							'messages' => array(
+								array(
+										'type' => 'text',					
+										'text' => 'Maaf '.$profil->displayName.' Server Kami Sedang Sibuk Sekarang.'
+									)
+							)
+						);
+				
+	}
+	else{
+		$balas = array(
+							'UserID' => $profil->userId,
+                                                        'replyToken' => $replyToken,														
+							'messages' => array(
+								array(
+										'type' => 'text',					
+										'text' => ''.$diterima.''
+									)
+							)
+						);
+						
+	}
+}
+
 if (isset($balas)) {
     $result = json_encode($balas);
 //$result = ob_get_clean();
