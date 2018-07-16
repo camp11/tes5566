@@ -2376,51 +2376,6 @@ $json_data = file_get_contents($url);
 $url=json_decode($json_data,1);
 $diterima = $url['response'];
 if($message['type']=='text')
-{
-if($url['result'] == 404)
-	{
-		$balas = array(
-							'UserID' => $profil->userId,	
-                                                        'replyToken' => $replyToken,													
-							'messages' => array(
-								array(
-										'type' => 'text',					
-										'text' => 'Mohon Gunakan Bahasa Indonesia Yang Benar :D.'
-									)
-							)
-						);
-				
-	}
-else
-if($url['result'] != 100)
-	{
-		
-		
-		$balas = array(
-							'UserID' => $profil->userId,
-                                                        'replyToken' => $replyToken,														
-							'messages' => array(
-								array(
-										'type' => 'text',					
-										'text' => 'Maaf '.$profil->displayName.' Server Kami Sedang Sibuk Sekarang.'
-									)
-							)
-						);
-				
-	}
-	else{
-		$balas = array(
-							'UserID' => $profil->userId,
-                                                        'replyToken' => $replyToken,														
-							'messages' => array(
-								array(
-										'type' => 'text',					
-										'text' => ''.$diterima.''
-									)
-							)
-						);
-						
-	}
 }
 
 if (isset($balas)) {
