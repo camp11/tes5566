@@ -2370,7 +2370,7 @@ if($message['type']=='text') {
 }
 else
 $pesan=str_replace(" ", "%20", $pesan_datang);
-$key = 'b5aa3723-6a95-42e6-9a8d-2de342d930cc'; //API SimSimi
+$key = '8d72745c-a69d-4bfa-816e-010d14860263'; //API SimSimi
 $url = 'http://sandbox.api.simsimi.com/request.p?key='.$key.'&lc=id&ft=1.0&text='.$pesan;
 $json_data = file_get_contents($url);
 $url=json_decode($json_data,1);
