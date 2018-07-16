@@ -2376,7 +2376,7 @@ if($message['type']=='sticker')
 							'messages' => array(
 								array(
 										'type' => 'text',									
-										'text' => 'Ngetik dong, sticker mulu kamu '.$profil->displayName.										
+										'text' => 'Ngetik dong, sticker mulu kamu '.$profil->displayName										
 									
 									)
 							)
@@ -2417,7 +2417,7 @@ if($url['result'] != 100)
 							'messages' => array(
 								array(
 										'type' => 'text',					
-										'text' => '. '.$profil->displayName.
+										'text' => '. '.$profil->displayName
 									)
 							)
 						);
