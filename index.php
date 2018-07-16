@@ -2417,7 +2417,7 @@ if($url['result'] != 100)
 							'messages' => array(
 								array(
 										'type' => 'text',					
-										'text' => 
+										'text' => '  '
 									)
 							)
 						);
