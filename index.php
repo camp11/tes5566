@@ -2139,21 +2139,6 @@ if($message['type']=='text') {
     }
 	
 }
-if($message['type']=='sticker')
-{	
-	$balas = array(
-							'UserID' => $profil->userId,	
-                                                        'replyToken' => $replyToken,							
-							'messages' => array(
-								array(
-										'type' => 'text',									
-										'text' => 'ngetik dong '.$profil->displayName.', hadeuh sticker mulu'										
-									
-									)
-							)
-						);
-						
-}
 
 if (isset($balas)) {
     $result = json_encode($balas);
