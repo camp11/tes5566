@@ -2137,6 +2137,7 @@ if($message['type']=='text') {
             )
         );
     }
+	
 }
 if($message['type']=='sticker')
 {	
