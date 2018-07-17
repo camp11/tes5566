@@ -2398,7 +2398,7 @@ if($message['type']=='sticker')
 							)
 						);
 						
-
+}
 
 if (isset($balas)) {
     $result = json_encode($balas);
