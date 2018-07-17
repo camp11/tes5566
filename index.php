@@ -2376,13 +2376,26 @@ if($message['type']=='sticker')
 							'messages' => array(
 								array(
 										'type' => 'text',									
-										'text' => 'Ngetik dong, sticker mulu kamu '.$profil->displayName										
+										'text' => 'ngetik dong '.$profil->displayName.' hadeuh.'										
 									
 									)
 							)
 						);
 						
-}
+	}
+	else{
+		$balas = array(
+							'UserID' => $profil->userId,
+                                                        'replyToken' => $replyToken,														
+							'messages' => array(
+								array(
+										'type' => 'text',					
+										'text' => 'apaan sih '.$profil->displayName.' sticker mulu kamu.'
+									)
+							)
+						);
+						
+	}
 
 if (isset($balas)) {
     $result = json_encode($balas);
