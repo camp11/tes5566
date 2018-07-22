@@ -2115,6 +2115,21 @@ if($message['type']=='text') {
         );
     }
 }
+if($message['type']=='sticker')
+{	
+	$balas = array(
+							'UserID' => $profil->userId,	
+                                                        'replyToken' => $replyToken,							
+							'messages' => array(
+								array (
+  'type' => 'sticker',
+  'packageId' => '1',
+  'stickerId' => '1','3','15',
+)
+							)
+						);
+						
+}
 
 if (isset($balas)) {
     $result = json_encode($balas);
