@@ -2115,22 +2115,6 @@ if($message['type']=='text') {
         );
     }
 }
-//pesan bergambar
-if($message['type']=='text') {
-	    if ($command == '/shalat') {
-
-        $result = shalat($options);
-        $balas = array(
-            'replyToken' => $replyToken,
-            'messages' => array(
-                array(
-                    'type' => 'text',
-                    'text' => $result
-                )
-            )
-        );
-	}
-}
 if($message['type']=='sticker')
 {	
 	$balas = array(
@@ -2144,8 +2128,7 @@ if($message['type']=='sticker')
 									
 									)
 							)
-						);
-						
+						);			
 }
 
 if (isset($balas)) {
