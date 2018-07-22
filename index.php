@@ -2133,8 +2133,8 @@ if($message['type']=='text') {
 if($Message['Type']=="Sticker"){
         $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
         $arrayPostData['messages'][0]['type'] = "sticker";
-        $arrayPostData['messages'][0]['packageId'] = "2,5,6,9";
-        $arrayPostData['messages'][0]['stickerId'] = "46";
+        $arrayPostData['messages'][0]['packageId'] = "1";
+        $arrayPostData['messages'][0]['stickerId'] = "3,5,105,106,107,110,102,103";
         replyMsg($arrayHeader,$arrayPostData);
     }
 
