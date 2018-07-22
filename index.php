@@ -20,9 +20,6 @@ $type 		= $client->parseEvents()[0]['type'];
 $message 	= $client->parseEvents()[0]['message'];
 $messageid 	= $client->parseEvents()[0]['message']['id'];
 
-$packageId = $event['message']['packageId'];
-$stickerId = $event['message']['stickerId'];
-
 $profil = $client->profil($userId);
 
 $pesan_datang = explode(" ", $message['text']);
@@ -229,13 +226,6 @@ function anime_syn($title) {
     $result = "Judul : " . $parsed['title'];
     $result .= "\n\nSynopsis :\n" . $parsed['synopsis'];
     return $result;
-}
-#-------------------------[Function]-------------------------#
-function replyStickerMessage($bot,$replyToken,$packageId,$stickerId) {
-    $response = $bot->replyMessage($replyToken,new \LINE\LINEBot\MessageBuilder\StickerMessageBuilder($packageId,$stickerId));
-    if (!$response->isSucceeded()) {
-        error_log('replyStickerMessage :' . $response->getHTTPStatus() . ' ' . $response->getRawBody())
-    }
 }
 #-------------------------[Function]-------------------------#
 function say($keyword) { 
@@ -2139,24 +2129,14 @@ if($message['type']=='text') {
                 )
             )
         );
+}
+if($Message['Type']=="Sticker"){
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "sticker";
+        $arrayPostData['messages'][0]['packageId'] = "2,5,6,9";
+        $arrayPostData['messages'][0]['stickerId'] = "46";
+        replyMsg($arrayHeader,$arrayPostData);
     }
-	
-}
-if($message['type']=='sticker')
-{	
-	$balas = array(
-							'UserID' => $profil->userId,	
-                                                        'replyToken' => $replyToken,							
-							'messages' => array(
-								array(
-										'type' => 'sticker',
-										'stickerId' => array(2,5,6,9) 										
-									
-									)
-							)
-						);
-						
-}
 
 if (isset($balas)) {
     $result = json_encode($balas);
