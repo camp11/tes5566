@@ -2130,13 +2130,22 @@ if($message['type']=='text') {
             )
         );
 }
-if($Message['Type']=="Sticker"){
-        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
-        $arrayPostData['messages'][0]['type'] = "sticker";
-        $arrayPostData['messages'][0]['packageId'] = "1";
-        $arrayPostData['messages'][0]['stickerId'] = "3,5,105,106,107,110,102,103";
-        replyMsg($arrayHeader,$arrayPostData);
-    }
+if($message['type']=='sticker')
+{	
+	$balas = array(
+							'UserID' => $profil->userId,	
+                                                        'replyToken' => $replyToken,							
+							'messages' => array(
+								array(
+										'type' => 'sticker',
+										'packageId' => '1'										
+										'stickerId' => '3,5,105,106,107,110,102,103'										
+									
+									)
+							)
+						);
+						
+}
 
 if (isset($balas)) {
     $result = json_encode($balas);
