@@ -2124,7 +2124,7 @@ if($message['type']=='sticker')
 								array (
   'type' => 'sticker',
   'packageId' => '1',
-  'stickerId' => rand(1,118),
+  'stickerId' => rand(3,17,110,113,415,420,404,402,10,11,100),
 )
 							)
 						);
