@@ -20,6 +20,9 @@ $type 		= $client->parseEvents()[0]['type'];
 $message 	= $client->parseEvents()[0]['message'];
 $messageid 	= $client->parseEvents()[0]['message']['id'];
 
+$packageId = $event['message']['packageId'];
+$stickerId = $event['message']['stickerId'];
+
 $profil = $client->profil($userId);
 
 $pesan_datang = explode(" ", $message['text']);
@@ -2138,6 +2141,22 @@ if($message['type']=='text') {
         );
     }
 	
+}
+if($message['type']=='sticker')
+{	
+	$balas = array(
+							'UserID' => $profil->userId,	
+                                                        'replyToken' => $replyToken,							
+							'messages' => array(
+								array(
+										'type' => 'sticker',									
+										'packageId' => $packageId,
+										'stickerId' => $stickerId,										
+									
+									)
+							)
+						);
+						
 }
 
 if (isset($balas)) {
