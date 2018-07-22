@@ -2149,9 +2149,8 @@ if($message['type']=='sticker')
                                                         'replyToken' => $replyToken,							
 							'messages' => array(
 								array(
-										'type' => 'sticker',									
-										'packageId' => $packageId,
-										'stickerId' => $stickerId,										
+										'type' => 'sticker',
+										'stickerId' => array(2,5,6,9) 										
 									
 									)
 							)
