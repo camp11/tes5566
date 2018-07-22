@@ -2124,7 +2124,7 @@ if($message['type']=='sticker')
 								array (
   'type' => 'sticker',
   'packageId' => '1',
-  'stickerId' => array(1,3,15,9) ;
+  'stickerId' => 'array(1,3,15,9)',
 )
 							)
 						);
