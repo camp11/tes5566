@@ -1267,6 +1267,13 @@ if($message['type']=='text') {
         );
     }
 }
+#ตัวอย่าง Message Type "Sticker"{
+        $arrayPostData['replyToken'] = $arrayJson['events'][0]['replyToken'];
+        $arrayPostData['messages'][0]['type'] = "sticker";
+        $arrayPostData['messages'][0]['packageId'] = "1";
+        $arrayPostData['messages'][0]['stickerId'] = "2,5,6";
+        replyMsg($arrayHeader,$arrayPostData);
+    }
 //pesan bergambar
 if($message['type']=='text') {
 	    if ($command == 'Bot' || $command == 'bot' ) {
