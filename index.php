@@ -231,11 +231,11 @@ function anime_syn($title) {
     return $result;
 }
 #-------------------------[Function]-------------------------#
-function manga_syn($title) {
-    $parsed = manga($title);
-    $result = "Judul : " . $parsed['title'];
-    $result .= "\n\nSynopsis :\n" . $parsed['synopsis'];
-    return $result;
+function replyStickerMessage($bot,$replyToken,$packageId,$stickerId) {
+    $response = $bot->replyMessage($replyToken,new \LINE\LINEBot\MessageBuilder\StickerMessageBuilder($packageId,$stickerId));
+    if (!$response->isSucceeded()) {
+        error_log('replyStickerMessage :' . $response->getHTTPStatus() . ' ' . $response->getRawBody())
+    }
 }
 #-------------------------[Function]-------------------------#
 function say($keyword) { 
