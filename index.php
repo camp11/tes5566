@@ -1993,7 +1993,7 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Sepi' || $command == 'Krik' ) {
+	    if ($command == 'Krik' || $command == 'krik' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
