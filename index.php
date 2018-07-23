@@ -1921,15 +1921,15 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Sahur' || $command == 'sahur' ) {
+	    if ($command == 'Kaget' || $command == 'kaget' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
             'messages' => array(
                 array (
   'type' => 'imagemap',
-  'baseUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1526285827/line/sahur',
-  'altText' => 'SELAMAT SANTAP SAHUR',
+  'baseUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1532321762/Stiker/2',
+  'altText' => 'LOVE FIS mengirim sticker',
   'baseSize' => 
   array (
     'height' => 1040,
@@ -1940,7 +1940,43 @@ if($message['type']=='text') {
     0 => 
     array (
       'type' => 'message',
-      'text' => 'Sahur',
+      'text' => 'Kaget',
+      'area' => 
+      array (
+        'x' => 520,
+        'y' => 0,
+        'width' => 520,
+        'height' => 1040,
+      ),
+    ),
+  ),
+)
+            )
+        );
+    }
+}
+//pesan bergambar
+if($message['type']=='text') {
+	    if ($command == 'Haha' || $command == 'Hahaha' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array (
+  'type' => 'imagemap',
+  'baseUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1532322034/Stiker/3',
+  'altText' => 'LOVE FIS mengirim sticker',
+  'baseSize' => 
+  array (
+    'height' => 1040,
+    'width' => 1040,
+  ),
+  'actions' => 
+  array (
+    0 => 
+    array (
+      'type' => 'message',
+      'text' => 'Haha',
       'area' => 
       array (
         'x' => 520,
