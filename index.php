@@ -1892,7 +1892,7 @@ if($message['type']=='text') {
             'messages' => array(
                 array (
   'type' => 'imagemap',
-  'baseUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1531661200/Stiker',
+  'baseUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1532321255/Stiker/1',
   'altText' => 'Mantaap',
   'baseSize' => 
   array (
