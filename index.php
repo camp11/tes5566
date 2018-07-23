@@ -2012,7 +2012,7 @@ if($message['type']=='text') {
     0 => 
     array (
       'type' => 'message',
-      'text' => 'Sepi',
+      'text' => 'Krik',
       'area' => 
       array (
         'x' => 520,
