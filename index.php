@@ -1921,7 +1921,7 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Kaget' || $command == 'kaget' ) {
+	    if ($command == 'Kaget' || $command == 'Ha' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
