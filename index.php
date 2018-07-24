@@ -2047,7 +2047,7 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Ghibah' || $command == 'gibah' ) {
+	    if ($command == 'Ghibah' || $command == 'ngerumpi' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
