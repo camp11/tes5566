@@ -659,7 +659,25 @@ if ($type == 'join' || $command == 'Help') {
 }
 #-------------------------[Function]-------------------------#
 //show menu, saat join dan command,menu
-if ($type == 'join' || $command == 'Wc') {
+if ($type == 'join' || $command == 'Dev') {
+    $text .= "====[HALLO SOBAT FIS]====";
+    $text .= " \n";
+    $text .= "Terima Kasih Atas Invite nya\n";
+    $text .= "=======================\n";	
+    $text .= "=>Developer BOT ketik Creator\n";
+    $balas = array(
+        'replyToken' => $replyToken,
+        'messages' => array(
+            array(
+                'type' => 'text',
+                'text' => $text
+            )
+        )
+    );
+}
+#-------------------------[Function]-------------------------#
+//show menu, saat join dan command,menu
+if ($type == 'text' || $command == 'Wc') {
     $text .= "====[HALLO WELCOME]====";
     $text .= " \n";
     $text .= "       ⤵Selamat Datang di⤵\n";
