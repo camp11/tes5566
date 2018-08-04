@@ -660,7 +660,7 @@ if ($type == 'join' || $command == 'Help') {
 #-------------------------[Function]-------------------------#
 //show menu, saat join dan command,menu
 if ($type == 'join' || $command == 'Dev') {
-    $text .= "====[HALLO SOBAT FIS]====";
+    $text .= "====[HALLO SOBAT FIS􀀰]====";
     $text .= " \n";
     $text .= "Terima Kasih Atas Invite nya\n";
     $text .= "=======================\n";	
