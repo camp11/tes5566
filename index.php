@@ -680,11 +680,12 @@ if ($type == 'join' || $command == 'Dev') {
 if ($type == 'text' || $command == 'Wc') {
     $text .= "====[HALLO WELCOME]====";
     $text .= " \n";
-    $text .= "       ⤵Selamat Datang di⤵\n";
+    $text .= "  ⤵Selamat Datang di⤵\n";
     $text .= "=======================\n";	
-    $text .= "      >ⓜⓐⓘⓝ ⓡⓞⓞⓜ<\n";	
-    $text .= "F͛A͛M͛I͛L͛Y͛ I͛N͛D͛O͛N͛E͛S͛I͛A͛N͛ S͛M͛U͛L͛E͛\n";
-    $text .= "=======================\n";	
+    $text .= "   🎤FIS MAIN ROOM🎤\n";	
+    $text .= "🇮Family Indonesian Smule🇩\n";
+    $text .= "=======================\n";
+    $text .= " 􀀰Salam FIS & PEACE􀀰\n";
     $text .= "  Jangan Lupa Cek Note ya\n";
     $text .= "[Salken dari Saya]->$profil->displayName\n";
     $balas = array(
@@ -1370,7 +1371,7 @@ if($message['type']=='text') {
             'messages' => array(
                 array(
                     'type' => 'text',
-                    'text' => 'Ngopi dulu '.$profil->displayName
+                    'text' => 'Ngopi dulu 􀁙'.$profil->displayName
                 )
             )
         );
