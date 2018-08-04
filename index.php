@@ -680,9 +680,9 @@ if ($type == 'join' || $command == 'Dev') {
 if ($type == 'text' || $command == 'Wc') {
     $text .= "====[HALLO WELCOME]====";
     $text .= " \n";
-    $text .= "    ⤵Selamat Datang di⤵\n";
+    $text .= "      ⤵Selamat Datang di⤵\n";
     $text .= "=======================\n";	
-    $text .= "     🎤FIS MAIN ROOM🎤\n";	
+    $text .= "       🎤FIS MAIN ROOM🎤\n";	
     $text .= "🇮🇩Family Indonesian Smule🇮🇩\n";
     $text .= "=======================\n";
     $text .= " 􀀰Salam FIS & PEACE􀀰\n";
