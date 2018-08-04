@@ -1783,6 +1783,241 @@ if($message['type']=='text') {
     }
 }
 //pesan bergambar
+if($message['type']=='text')
+	if ($command == 'admin1' || $command == 'Admin1' )
+	{
+		
+		
+		$balas = array(
+							'replyToken' => $replyToken,														
+							'messages' => array(
+array (
+  'type' => 'template',
+  'altText' => 'FIS MANAGEMENT',
+  'template' => 
+  array (
+    'type' => 'carousel',
+    'columns' => 
+    array (
+      0 => 
+      array (
+        'thumbnailImageUrl' => 'https://preview.ibb.co/gDpnMb/20180108_110257.jpg',
+        'imageBackgroundColor' => '#FFFFFF',
+        'title' => 'FOUNDER',
+        'text' => 'Group Owner -- Name : FahreziLee   Location : Malaysia',
+        'actions' => 
+        array (
+          0 => 
+          array (
+            'type' => 'uri',
+            'label' => 'CHAT',
+            'uri' => 'http://tiny.cc/FIS_Lee',
+          ),
+          1 => 
+          array (
+            'type' => 'uri',
+            'label' => 'SMULE',
+            'uri' => 'https://www.smule.com/FIS_FahreziLee',
+          ),		  
+          2 => 
+          array (
+            'type' => 'message',
+            'label' => 'view detail',
+            'text' => 'FIS_LEE',
+          ),
+        ),
+      ),
+      1 => 
+      array (
+        'thumbnailImageUrl' => 'https://preview.ibb.co/gUFu1b/20180108_110910.jpg',
+        'imageBackgroundColor' => '#FFFFFF',
+        'title' => 'SECRETARY',
+        'text' => 'Admin -- Name : DeeAna       Location : Borneo',
+        'actions' => 
+        array (
+          0 => 
+          array (
+            'type' => 'uri',
+            'label' => 'CHAT',
+            'uri' => 'http://tiny.cc/FIS_DEE',
+          ),
+          1 => 
+          array (
+            'type' => 'uri',
+            'label' => 'SMULE',
+            'uri' => 'https://www.smule.com/FIS_Dee',
+          ),		  
+          2 => 
+          array (
+            'type' => 'message',
+            'label' => 'view detail',
+            'text' => 'FIS_Dee',
+          ),
+        ),
+      ),
+      2 => 
+      array (
+        'thumbnailImageUrl' => 'https://preview.ibb.co/njD3uw/20180108_111546.jpg',
+        'imageBackgroundColor' => '#FFFFFF',
+        'title' => 'CREATIVE',
+        'text' => 'Admin -- Name : ALS                 Location : West Java',
+        'actions' => 
+        array (
+          0 => 
+          array (
+            'type' => 'uri',
+            'label' => 'CHAT',
+            'uri' => 'http://tiny.cc/FIS_ALS',
+          ),
+          1 => 
+          array (
+            'type' => 'uri',
+            'label' => 'SMULE',
+            'uri' => 'https://www.smule.com/FIS_ALS',
+          ),		  
+          2 => 
+          array (
+            'type' => 'message',
+            'label' => 'view detail',
+            'text' => 'FIS_ALS',
+          ),
+        ),
+      ),
+      3 => 
+      array (
+        'thumbnailImageUrl' => 'https://preview.ibb.co/nxZySG/20180108_111027.jpg',
+        'imageBackgroundColor' => '#FFFFFF',
+        'title' => 'RESOURCE',
+        'text' => 'Admin -- Name : Lala              Location : Hongkong',
+        'actions' => 
+        array (
+          0 => 
+          array (
+            'type' => 'uri',
+            'label' => 'CHAT',
+            'uri' => 'http://tiny.cc/FIS_LALA',
+          ),
+          1 => 
+          array (
+            'type' => 'uri',
+            'label' => 'SMULE',
+            'uri' => 'https://www.smule.com/FIS_LALA',
+          ),		  
+          2 => 
+          array (
+            'type' => 'message',
+            'label' => 'view detail',
+            'text' => 'FIS_LALA',
+          ),
+        ),
+      ),
+    ),
+    'imageAspectRatio' => 'rectangle',
+    'imageSize' => 'cover',
+  ),
+),
+array (
+  'type' => 'template',
+  'altText' => 'FIS MANAGEMENT',
+  'template' => 
+  array (
+    'type' => 'carousel',
+    'columns' => 
+    array (
+      4 => 
+      array (
+        'thumbnailImageUrl' => 'https://preview.ibb.co/gRYKZw/20180108_111446.jpg',
+        'imageBackgroundColor' => '#FFFFFF',
+        'title' => 'HOME AS.',
+        'text' => 'Admin -- Name : Alfariz              Location : Jakarta',
+        'actions' => 
+        array (
+          0 => 
+          array (
+            'type' => 'uri',
+            'label' => 'CHAT',
+            'uri' => 'http://tiny.cc/FIS_ALFARIZ',
+          ),
+          1 => 
+          array (
+            'type' => 'uri',
+            'label' => 'SMULE',
+            'uri' => 'https://www.smule.com/FIS_Alfariz',
+          ),		  
+          2 => 
+          array (
+            'type' => 'message',
+            'label' => 'view detail',
+            'text' => 'FIS_Alfariz',
+          ),
+        ),
+      ),
+      5 => 
+      array (
+        'thumbnailImageUrl' => 'https://preview.ibb.co/npK41b/20180108_111333.jpg',
+        'imageBackgroundColor' => '#FFFFFF',
+        'title' => 'HOME AS.',
+        'text' => 'Admin -- Name : Juna Hermanza   Location : West Java',
+        'actions' => 
+        array (
+          0 => 
+          array (
+            'type' => 'uri',
+            'label' => 'CHAT',
+            'uri' => 'http://tiny.cc/FIS_JUNA',
+          ),
+          1 => 
+          array (
+            'type' => 'uri',
+            'label' => 'SMULE',
+            'uri' => 'https://www.smule.com/FIS_Juna',
+          ),		  
+          2 => 
+          array (
+            'type' => 'message',
+            'label' => 'view detail',
+            'text' => 'FIS_Juna',
+          ),
+        ),
+      ),
+      6 => 
+      array (
+        'thumbnailImageUrl' => 'https://preview.ibb.co/edtxMb/20180108_111247.jpg',
+        'imageBackgroundColor' => '#FFFFFF',
+        'title' => 'HOME AS.',
+        'text' => 'Admin -- Name : Anissa              Location : West Java',
+        'actions' => 
+        array (
+          0 => 
+          array (
+            'type' => 'uri',
+            'label' => 'CHAT',
+            'uri' => 'http://tiny.cc/FIS_NISA',
+          ),
+          1 => 
+          array (
+            'type' => 'uri',
+            'label' => 'SMULE',
+            'uri' => 'https://www.smule.com/FIS_Nisa',
+          ),		  
+          2 => 
+          array (
+            'type' => 'message',
+            'label' => 'view detail',
+            'text' => 'FIS_Nisa',
+          ),
+        ),
+      ),
+    ),
+    'imageAspectRatio' => 'rectangle',
+    'imageSize' => 'cover',
+  ),
+),
+							)
+						);
+				
+	}
+//pesan bergambar
 if($message['type']=='text') {
 	    if ($command == 'Anniv' || $command == 'bday' ) {
 
