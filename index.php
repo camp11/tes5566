@@ -1924,7 +1924,7 @@ array (
     'type' => 'carousel',
     'columns' => 
     array (
-      4 => 
+      1 => 
       array (
         'thumbnailImageUrl' => 'https://preview.ibb.co/gRYKZw/20180108_111446.jpg',
         'imageBackgroundColor' => '#FFFFFF',
@@ -1952,7 +1952,7 @@ array (
           ),
         ),
       ),
-      5 => 
+      2 => 
       array (
         'thumbnailImageUrl' => 'https://preview.ibb.co/npK41b/20180108_111333.jpg',
         'imageBackgroundColor' => '#FFFFFF',
@@ -1980,7 +1980,7 @@ array (
           ),
         ),
       ),
-      6 => 
+      3 => 
       array (
         'thumbnailImageUrl' => 'https://preview.ibb.co/edtxMb/20180108_111247.jpg',
         'imageBackgroundColor' => '#FFFFFF',
