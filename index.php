@@ -2201,6 +2201,22 @@ if($message['type']=='text') {
         );
     }
 }
+//pesan bergambar
+if($message['type']=='text') {
+	    if ($command == 'logo' || $command == 'Logo' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array (
+  'type' => 'image',
+  'originalContentUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1533980124/Gif/download.gif',
+  'previewImageUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1533981038/Gif/LOGO_FIS.png',
+)
+            )
+        );
+    }
+}
 
 if (isset($balas)) {
     $result = json_encode($balas);
