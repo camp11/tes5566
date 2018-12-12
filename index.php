@@ -701,16 +701,25 @@ if ($type == 'text' || $command == 'Wc') {
 if ($type == 'memberJoined') {
     $responses['replyToken'] = $replyToken; 
     $responses['messages'][0]['type'] = "text";
-    $responses['messages'][0]['text'] = "Welcome di FIS MAIN ROOM kk ".$profileName;	
+	$responses['messages'][0]['text'] = "====[HALLO WELCOME]====";
+	$responses['messages'][0]['text'] = ".$profil->displayName";
+	$responses['messages'][0]['text'] = " \n";
+	$responses['messages'][0]['text'] = "      ⤵Selamat Datang di⤵\n";
+	$responses['messages'][0]['text'] = "=======================\n";
+	$responses['messages'][0]['text'] = "       🎤FIS MAIN ROOM🎤\n";
+	$responses['messages'][0]['text'] = "🇮🇩Family Indonesian Smule🇮🇩\n";
+	$responses['messages'][0]['text'] = "=======================\n";
+	$responses['messages'][0]['text'] = " 􀀰Salam FIS & PEACE􀀰\n";
+	$responses['messages'][0]['text'] = "  Jangan Lupa Cek Note ya\n";
+    $responses['messages'][0]['text'] = "Semoga betah ya kk ".$profil->displayName;	
     $result = json_encode($responses);
     $result_json = json_decode($result, TRUE);
 	$balas = $result_json;
 }
-
 if ($type == 'memberLeft') {
     $responses['replyToken'] = $replyToken; 
     $responses['messages'][0]['type'] = "text";
-    $responses['messages'][0]['text'] = "Goodbye kk ".$profileName;	
+    $responses['messages'][0]['text'] = "Goodbye kk ".$profil->displayName."Sampai jumpa lagi";	
     $result = json_encode($responses);
     $result_json = json_decode($result, TRUE);
 	$balas = $result_json;
