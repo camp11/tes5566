@@ -701,9 +701,7 @@ if ($type == 'text' || $command == 'Wc') {
 if ($type == 'memberJoined') {
     $responses['replyToken'] = $replyToken; 
     $responses['messages'][0]['type'] = "text";
-    $responses['messages'][0]['text'] = "====[HALLO WELCOME]====";
-    $responses['messages'][0]['text'] = ".$profil->displayName";
-    $responses['messages'][0]['text'] = "Semoga betah ya kk ".$profil->displayName;	
+    $responses['messages'][0]['text'] = "====[HALLO WELCOME]====".$profil->displayName;	
     $result = json_encode($responses);
     $result_json = json_decode($result, TRUE);
 	$balas = $result_json;
