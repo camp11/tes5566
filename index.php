@@ -698,6 +698,23 @@ if ($type == 'text' || $command == 'Wc') {
         )
     );
 }
+if ($type == 'memberJoined') {
+    $responses['replyToken'] = $replyToken; 
+    $responses['messages'][0]['type'] = "text";
+    $responses['messages'][0]['text'] = "Welcome di FIS MAIN ROOM kk ".$profileName;	
+    $result = json_encode($responses);
+    $result_json = json_decode($result, TRUE);
+	$balas = $result_json;
+}
+
+if ($type == 'memberLeft') {
+    $responses['replyToken'] = $replyToken; 
+    $responses['messages'][0]['type'] = "text";
+    $responses['messages'][0]['text'] = "Goodbye kk ".$profileName;	
+    $result = json_encode($responses);
+    $result_json = json_decode($result, TRUE);
+	$balas = $result_json;
+}
 if($message['type']=='text') {
 	    if ($command == '/qiblat') {
         $hasil = qibla($options);
