@@ -2198,7 +2198,7 @@ if($message['type']=='text') {
             'messages' => array(
                 array (
   'type' => 'template',
-  'altText' => 'lOVE FIS send sticker',
+  'altText' => 'lOVE FIS mengirim sticker',
   'template' => 
   array (
     'type' => 'image_carousel',
@@ -2206,7 +2206,7 @@ if($message['type']=='text') {
     array (
       0 => 
       array (
-        'imageUrl' => 'https://stickershop.line-scdn.net/stickershop/v1/sticker/12760024/IOS/sticker_animation@2x.png',
+        'imageUrl' => 'https://stickershop.line-scdn.net/stickershop/v1/sticker/12760024/Android/sticker_animation.png',
         'action' => 
         array (
           'type' => 'message',
