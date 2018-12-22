@@ -2191,6 +2191,37 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
+	    if ($command == 'hihi' || $command == 'Hihi' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array (
+  'type' => 'template',
+  'altText' => 'lOVE FIS send sticker',
+  'template' => 
+  array (
+    'type' => 'image_carousel',
+    'columns' => 
+    array (
+      0 => 
+      array (
+        'imageUrl' => 'https://stickershop.line-scdn.net/stickershop/v1/sticker/12760024/IOS/sticker_animation@2x.png',
+        'action' => 
+        array (
+          'type' => 'message',
+          'text' => 'hihi',
+        ),
+      ),
+    ),
+  ),
+)
+            )
+        );
+    }
+}
+//pesan bergambar
+if($message['type']=='text') {
 	    if ($command == 'logo' || $command == 'Logo' ) {
 
         $balas = array(
