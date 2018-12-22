@@ -2198,7 +2198,7 @@ if($message['type']=='text') {
             'messages' => array(
                 array (
   'type' => 'template',
-  'altText' => 'lOVE FIS mengirim sticker',
+  'altText' => 'LOVE FIS mengirim sticker',
   'template' => 
   array (
     'type' => 'image_carousel',
@@ -2207,6 +2207,37 @@ if($message['type']=='text') {
       0 => 
       array (
         'imageUrl' => 'https://stickershop.line-scdn.net/stickershop/v1/sticker/12760024/IOS/sticker_animation@2x.png;compress=true',
+        'action' => 
+        array (
+          'type' => 'message',
+          'text' => 'hihi',
+        ),
+      ),
+    ),
+  ),
+)
+            )
+        );
+    }
+}
+//pesan bergambar
+if($message['type']=='text') {
+	    if ($command == 'wkwk' || $command == 'Wkwk' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array (
+  'type' => 'template',
+  'altText' => 'LOVE FIS mengirim sticker',
+  'template' => 
+  array (
+    'type' => 'image_carousel',
+    'columns' => 
+    array (
+      0 => 
+      array (
+        'imageUrl' => 'https://stickershop.line-scdn.net/stickershop/v1/sticker/12760021/IOS/sticker_animation@2x.png;compress=true',
         'action' => 
         array (
           'type' => 'message',
