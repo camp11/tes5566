@@ -2206,7 +2206,7 @@ if($message['type']=='text') {
     array (
       0 => 
       array (
-        'imageUrl' => 'https://stickershop.line-scdn.net/stickershop/v1/sticker/12760024/IOS/sticker_animation2x.png',
+        'imageUrl' => 'https://stickershop.line-scdn.net/stickershop/v1/sticker/12760024/IOS/@sticker_animation2x.png',
         'action' => 
         array (
           'type' => 'message',
