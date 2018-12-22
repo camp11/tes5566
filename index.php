@@ -2241,7 +2241,7 @@ if($message['type']=='text') {
         'action' => 
         array (
           'type' => 'message',
-          'text' => 'hihi',
+          'text' => 'Wkwk',
         ),
       ),
     ),
