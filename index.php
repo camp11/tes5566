@@ -21,6 +21,9 @@ $message 	= $client->parseEvents()[0]['message'];
 $messageid 	= $client->parseEvents()[0]['message']['id'];
 
 $profil = $client->profil($userId);
+$profileName 	= $profil->displayName;
+$profileURL 	= $profil->pictureUrl;
+$profielStatus 	= $profil->statusMessage;
 
 $pesan_datang = explode(" ", $message['text']);
 $msg_type = $message['type'];
@@ -2364,10 +2367,21 @@ if($message['type']=='text') {
 if (isset($balas)) {
     $result = json_encode($balas);
 //$result = ob_get_clean();
-
     file_put_contents('./balasan.json', $result);
-
-
-    $client->replyMessage($balas);
+    if ($profileName) {
+        $client->replyMessage($balas);
+	} elseif($type == 'join') {
+	    $client->replyMessage($balas);
+	} else {
+	$balas_gagal = array(
+        'replyToken' => $replyToken,
+        'messages' => array(
+            array(
+                'type' => 'text',
+                'text' => 'Males balas ahh, ADD dulu dong aku :p'
+            )
+        )
+    ); }
+	$client->replyMessage($balas_gagal);
 }
 ?>
