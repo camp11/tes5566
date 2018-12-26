@@ -1823,7 +1823,7 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Fis' || $command == 'fis' ) {
+	    if ($command == 'visi' || $command == 'Visi' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
@@ -2178,7 +2178,7 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'flag' || $command == 'Flag' ) {
+	    if ($command == 'upacara' || $command == 'Upacara' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
@@ -2334,6 +2334,37 @@ if($message['type']=='text') {
       0 => 
       array (
         'imageUrl' => 'https://stickershop.line-scdn.net/stickershop/v1/sticker/44526050/IOS/sticker_animation@2x.png;compress=true',
+        'action' => 
+        array (
+          'type' => 'message',
+          'text' => 'Wikwik',
+        ),
+      ),
+    ),
+  ),
+)
+            )
+        );
+    }
+}
+//pesan bergambar
+if($message['type']=='text') {
+	    if ($command == 'fis' || $command == 'flag' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array (
+  'type' => 'template',
+  'altText' => 'LOVE FIS mengirim bendera OFFICIAL',
+  'template' => 
+  array (
+    'type' => 'image_carousel',
+    'columns' => 
+    array (
+      0 => 
+      array (
+        'imageUrl' => 'https://s4.aconvert.com/convert/p3r68-cdx67/cbicr-xrn4z.png',
         'action' => 
         array (
           'type' => 'message',
