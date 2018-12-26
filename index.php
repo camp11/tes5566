@@ -1437,6 +1437,26 @@ if($message['type']=='text') {
                     'type' => 'text',
                     'text' => 'HALLO apa kabar'.$profil->displayName
                 )
+                array (
+  'type' => 'template',
+  'altText' => 'LOVE FIS mengirim sticker',
+  'template' => 
+  array (
+    'type' => 'image_carousel',
+    'columns' => 
+    array (
+      0 => 
+      array (
+        'imageUrl' => 'https://stickershop.line-scdn.net/stickershop/v1/sticker/98063982/IOS/sticker_animation@2x.png;compress=true',
+        'action' => 
+        array (
+          'type' => 'message',
+          'text' => 'bye',
+        ),
+      ),
+    ),
+  ),
+)
             )
         );
     }
