@@ -2349,7 +2349,7 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'fis' || $command == 'flag' ) {
+	    if ($command == 'fis' || $command == 'Fis' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
