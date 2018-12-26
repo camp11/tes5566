@@ -1962,78 +1962,6 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Kaget' || $command == 'Ha' ) {
-
-        $balas = array(
-            'replyToken' => $replyToken,
-            'messages' => array(
-                array (
-  'type' => 'imagemap',
-  'baseUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1532321762/Stiker/2',
-  'altText' => 'LOVE FIS mengirim sticker',
-  'baseSize' => 
-  array (
-    'height' => 1040,
-    'width' => 1040,
-  ),
-  'actions' => 
-  array (
-    0 => 
-    array (
-      'type' => 'message',
-      'text' => 'Kaget',
-      'area' => 
-      array (
-        'x' => 520,
-        'y' => 0,
-        'width' => 520,
-        'height' => 1040,
-      ),
-    ),
-  ),
-)
-            )
-        );
-    }
-}
-//pesan bergambar
-if($message['type']=='text') {
-	    if ($command == 'Haha' || $command == 'Hahaha' ) {
-
-        $balas = array(
-            'replyToken' => $replyToken,
-            'messages' => array(
-                array (
-  'type' => 'imagemap',
-  'baseUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1532322034/Stiker/3',
-  'altText' => 'LOVE FIS mengirim sticker',
-  'baseSize' => 
-  array (
-    'height' => 1040,
-    'width' => 1040,
-  ),
-  'actions' => 
-  array (
-    0 => 
-    array (
-      'type' => 'message',
-      'text' => 'Haha',
-      'area' => 
-      array (
-        'x' => 520,
-        'y' => 0,
-        'width' => 520,
-        'height' => 1040,
-      ),
-    ),
-  ),
-)
-            )
-        );
-    }
-}
-//pesan bergambar
-if($message['type']=='text') {
 	    if ($command == 'Krik' || $command == 'krik' ) {
 
         $balas = array(
@@ -2338,6 +2266,37 @@ if($message['type']=='text') {
         array (
           'type' => 'message',
           'text' => 'Wikwik',
+        ),
+      ),
+    ),
+  ),
+)
+            )
+        );
+    }
+}
+//pesan bergambar
+if($message['type']=='text') {
+	    if ($command == 'ha' || $command == 'Ha' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array (
+  'type' => 'template',
+  'altText' => 'LOVE FIS mengirim sticker',
+  'template' => 
+  array (
+    'type' => 'image_carousel',
+    'columns' => 
+    array (
+      0 => 
+      array (
+        'imageUrl' => 'https://stickershop.line-scdn.net/stickershop/v1/sticker/98064001/IOS/sticker_animation@2x.png;compress=true',
+        'action' => 
+        array (
+          'type' => 'message',
+          'text' => 'Ha',
         ),
       ),
     ),
