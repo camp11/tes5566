@@ -2122,7 +2122,7 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'hihi' || $command == 'Hihi' ) {
+	    if ($command == 'hihix' || $command == 'Hihix' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
@@ -2153,7 +2153,7 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'wkwk' || $command == 'Wkwk' ) {
+	    if ($command == 'wkwkx' || $command == 'Wkwkx' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
@@ -2184,7 +2184,7 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'hm' || $command == 'Bingung' ) {
+	    if ($command == 'hmx' || $command == 'Bingungx' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
@@ -2215,7 +2215,7 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'xixixi' || $command == 'Xixixi' ) {
+	    if ($command == 'xixixix' || $command == 'Xixixix' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
@@ -2246,7 +2246,7 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Wikwik' || $command == 'wikwik' ) {
+	    if ($command == 'Wikwikx' || $command == 'wikwikx' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
@@ -2277,7 +2277,7 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'ha' || $command == 'Ha' ) {
+	    if ($command == 'hax' || $command == 'Hax' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
@@ -2308,7 +2308,7 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Haha' || $command == 'haha' ) {
+	    if ($command == 'Hahax' || $command == 'hahax' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
