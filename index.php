@@ -2364,11 +2364,11 @@ if($message['type']=='text') {
     array (
       0 => 
       array (
-        'imageUrl' => 'https://s4.aconvert.com/convert/p3r68-cdx67/cbicr-xrn4z.png',
+        'imageUrl' => 'https://s4.aconvert.com/convert/p3r68-cdx67/cbw3x-67qew.png',
         'action' => 
         array (
           'type' => 'message',
-          'text' => 'Wikwik',
+          'text' => 'fis',
         ),
       ),
     ),
