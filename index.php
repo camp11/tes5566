@@ -2199,7 +2199,7 @@ if($message['type']=='text') {
     array (
       0 => 
       array (
-        'imageUrl' => 'https://stickershop.line-scdn.net/stickershop/v1/sticker/89547167/IOS/sticker_animation@2x.png;compress=true',
+        'imageUrl' => 'https://stickershop.line-scdn.net/stickershop/v1/sticker/98064003/IOS/sticker_animation@2x.png;compress=true',
         'action' => 
         array (
           'type' => 'message',
