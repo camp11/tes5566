@@ -1314,7 +1314,7 @@ if($message['type']=='text') {
     array (
       0 => 
       array (
-        'imageUrl' => 'https://s4.aconvert.com/convert/p3r68-cdx67/cbw3x-67qew.png',
+        'imageUrl' => 'https://res.cloudinary.com/tes5566/image/upload/v1545876593/Gif/cbuv9-keurm.png',
         'action' => 
         array (
           'type' => 'message',
