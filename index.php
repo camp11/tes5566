@@ -1428,15 +1428,11 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Halo' || $command == 'halo' ) {
+	    if ($command == 'Halo' || $command == 'Hallo' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
             'messages' => array(
-                array(
-                    'type' => 'text',
-                    'text' => 'HALLO apa kabar  '.$profil->displayName.' ?'
-                ),
                 array (
   'type' => 'template',
   'altText' => 'LOVE FIS mengirim sticker',
@@ -1457,6 +1453,10 @@ if($message['type']=='text') {
     ),
   ),
 ),
+                array(
+                    'type' => 'text',
+                    'text' => 'HALLO apa kabar '.$profil->displayName.' ?'
+                ),
             )
         );
     }
