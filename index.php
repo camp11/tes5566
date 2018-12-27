@@ -76,7 +76,7 @@ if ($type == 'join' || $command == 'Dev') {
 }
 #-------------------------[Function]-------------------------#
 //show menu, saat join dan command,menu
-if ($type == 'text' || $command == 'Wc') {
+if ($type == 'text' || $command == 'Wc' || $command == 'wc') {
     $text .= "====[HALLO WELCOME]====";
     $text .= " \n";
     $text .= "      ⤵Selamat Datang di⤵\n";
@@ -593,8 +593,7 @@ array (
 	}
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Welcome' || $command == 'wc' ) {
-
+	    if ($command == 'Welcome' || $command == 'welcome' ) {
         $balas = array(
             'replyToken' => $replyToken,
             'messages' => array(
@@ -634,7 +633,27 @@ if($message['type']=='text') {
       ),
     ),
   ),
-)
+),
+                array (
+  'type' => 'template',
+  'altText' => 'LOVE FIS mengirim sticker',
+  'template' => 
+  array (
+    'type' => 'image_carousel',
+    'columns' => 
+    array (
+      0 => 
+      array (
+        'imageUrl' => 'https://stickershop.line-scdn.net/stickershop/v1/sticker/98064002/IOS/sticker_animation@2x.png;compress=true',
+        'action' => 
+        array (
+          'type' => 'message',
+          'text' => 'Welcome',
+        ),
+      ),
+    ),
+  ),
+),
             )
         );
     }
