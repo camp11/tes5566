@@ -1435,8 +1435,8 @@ if($message['type']=='text') {
             'messages' => array(
                 array(
                     'type' => 'text',
-                    'text' => 'HALLO apa kabar'.$profil->displayName
-                )
+                    'text' => 'HALLO apa kabar  '.$profil->displayName.' ?'
+                ),
                 array (
   'type' => 'template',
   'altText' => 'LOVE FIS mengirim sticker',
@@ -1451,12 +1451,12 @@ if($message['type']=='text') {
         'action' => 
         array (
           'type' => 'message',
-          'text' => 'Halo',
+          'text' => 'halo',
         ),
       ),
     ),
   ),
-)
+),
             )
         );
     }
