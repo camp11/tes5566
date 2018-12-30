@@ -105,7 +105,7 @@ if ($type == 'memberJoined') {
     $result_json = json_decode($result, TRUE);
 	$balas = $result_json;
 }
-if ($type == 'memberLeave') {
+if ($type == 'memberLeft') {
     $responses['replyToken'] = $replyToken; 
     $responses['messages'][0]['type'] = "text";
     $responses['messages'][0]['text'] = "Goodbye kk ".$profil->displayName."Sampai jumpa lagi";	
