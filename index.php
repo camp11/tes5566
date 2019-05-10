@@ -913,7 +913,7 @@ if($message['type']=='text') {
     ),
   ),
 ),
-array (
+                array (
   'type' => 'template',
   'altText' => 'LOVE FIS mengirim sticker',
   'template' => 
@@ -933,6 +933,10 @@ array (
     ),
   ),
 )
+            )
+        );
+    }
+}
             )
         );
     }
