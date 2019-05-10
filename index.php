@@ -912,7 +912,31 @@ if($message['type']=='text') {
       ),
     ),
   ),
+),
+array (
+  'type' => 'template',
+  'altText' => 'LOVE FIS mengirim sticker',
+  'template' => 
+  array (
+    'type' => 'image_carousel',
+    'columns' => 
+    array (
+      0 => 
+      array (
+        'imageUrl' => 'https://stickershop.line-scdn.net/stickershop/v1/sticker/16421555/IOS/sticker.png',
+        'action' => 
+        array (
+          'type' => 'message',
+          'text' => 'Sahur',
+        ),
+      ),
+    ),
+  ),
 )
+            )
+        );
+    }
+}
             )
         );
     }
