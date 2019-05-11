@@ -1214,7 +1214,7 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Hahax' || $command == 'hahax' ) {
+	    if ($command == 'Haha' || $command == 'haha' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
@@ -1229,7 +1229,7 @@ if($message['type']=='text') {
     array (
       0 => 
       array (
-        'imageUrl' => 'https://stickershop.line-scdn.net/stickershop/v1/sticker/98063989/IOS/sticker_animation@2x.png;compress=true',
+        'imageUrl' => 'https://stickershop.line-scdn.net/stickershop/v1/sticker/16700756/IOS/sticker_animation@2x.png;compress=true',
         'action' => 
         array (
           'type' => 'message',
@@ -1274,7 +1274,6 @@ if($message['type']=='text') {
         );
     }
 }
-
 //pesan bergambar
 if($message['type']=='text') {
 	    if ($command == 'grr' || $command == 'Grr' ) {
@@ -1339,6 +1338,37 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
+	    if ($command == 'Thr' || $command == 'THR' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array (
+  'type' => 'template',
+  'altText' => 'LOVE FIS mengirim sticker',
+  'template' => 
+  array (
+    'type' => 'image_carousel',
+    'columns' => 
+    array (
+      0 => 
+      array (
+        'imageUrl' => 'https://stickershop.line-scdn.net/stickershop/v1/sticker/16700760/IOS/sticker_animation@2x.png;compress=true',
+        'action' => 
+        array (
+          'type' => 'message',
+          'text' => 'Thr',
+        ),
+      ),
+    ),
+  ),
+)
+            )
+        );
+    }
+}
+//pesan bergambar
+if($message['type']=='text') {
 	    if ($command == 'fis' || $command == 'Fis' ) {
 
         $balas = array(
@@ -1370,7 +1400,7 @@ if($message['type']=='text') {
 }
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Haus' || $command == 'lapar' ) {
+	    if ($command == 'Lemes' || $command == 'lemes' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
@@ -1385,11 +1415,11 @@ if($message['type']=='text') {
     array (
       0 => 
       array (
-        'imageUrl' => 'https://stickershop.line-scdn.net/stickershop/v1/sticker/179170800/IOS/sticker.png',
+        'imageUrl' => 'https://stickershop.line-scdn.net/stickershop/v1/sticker/16700758/IOS/sticker_animation@2x.png;compress=true',
         'action' => 
         array (
           'type' => 'message',
-          'text' => 'Haus',
+          'text' => 'Lemes',
         ),
       ),
     ),
