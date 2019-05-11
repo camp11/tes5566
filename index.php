@@ -214,7 +214,7 @@ if($message['type']=='text') {
 
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Assalamualaikum' || $command == 'Ass' || $command == 'Assalamualaikum wr wb' ) {
+	    if ($command == 'Assalamualaikum'|| $command == 'Assalamualaikum wr wb' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
@@ -223,8 +223,7 @@ if($message['type']=='text') {
                     'type' => 'text',
                     'text' => 'Waalaikumsalam '.$profil->displayName
                 ),
-            ),
-		                array (
+		array (
   'type' => 'template',
   'altText' => 'LOVE FIS mengirim sticker',
   'template' => 
@@ -243,7 +242,7 @@ if($message['type']=='text') {
       ),
     ),
   ),
-),         )
+),
         );
     }
 }
