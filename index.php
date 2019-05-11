@@ -214,7 +214,7 @@ if($message['type']=='text') {
 
 //pesan bergambar
 if($message['type']=='text') {
-	    if ($command == 'Assalamualaikum' || $command == 'Assalamualaikum wr wb' ) {
+	    if ($command == 'Assalamualaikum' || $command == 'Ass' || $command == 'Assalamualaikum wr wb' ) {
 
         $balas = array(
             'replyToken' => $replyToken,
@@ -222,8 +222,28 @@ if($message['type']=='text') {
                 array(
                     'type' => 'text',
                     'text' => 'Waalaikumsalam '.$profil->displayName
-                )
-            )
+                ),
+            ),
+		                array (
+  'type' => 'template',
+  'altText' => 'LOVE FIS mengirim sticker',
+  'template' => 
+  array (
+    'type' => 'image_carousel',
+    'columns' => 
+    array (
+      0 => 
+      array (
+        'imageUrl' => 'https://stickershop.line-scdn.net/stickershop/v1/sticker/16700754/IOS/sticker_animation@2x.png;compress=true',
+        'action' => 
+        array (
+          'type' => 'message',
+          'text' => 'Assalamualaikum',
+        ),
+      ),
+    ),
+  ),
+),         )
         );
     }
 }
