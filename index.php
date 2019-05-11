@@ -365,7 +365,7 @@ if($message['type']=='text') {
 ),
                 array(
                     'type' => 'text',
-                    'text' => 'Waalaikumsalam kk '.$profil->displayName.'
+                    'text' => 'Waalaikumsalam kk '.$profil->displayName
                 ),
             )
         );
