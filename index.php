@@ -211,41 +211,6 @@ if($message['type']=='text') {
         );
     }
 }
-
-//pesan bergambar
-if($message['type']=='text') {
-	    if ($command == 'Assalamualaikum'|| $command == 'Assalamualaikum wr wb' ) {
-
-        $balas = array(
-            'replyToken' => $replyToken,
-            'messages' => array(
-                array(
-                    'type' => 'text',
-                    'text' => 'Waalaikumsalam '.$profil->displayName
-                ),
-		array (
-  'type' => 'template',
-  'altText' => 'LOVE FIS mengirim sticker',
-  'template' => 
-  array (
-    'type' => 'image_carousel',
-    'columns' => 
-    array (
-      0 => 
-      array (
-        'imageUrl' => 'https://stickershop.line-scdn.net/stickershop/v1/sticker/16700754/IOS/sticker_animation@2x.png;compress=true',
-        'action' => 
-        array (
-          'type' => 'message',
-          'text' => 'Assalamualaikum',
-        ),
-      ),
-    ),
-  ),
-),
-        );
-    }
-}
 //pesan bergambar
 if($message['type']=='text') {
 	    if ($command == 'Sore' || $command == 'sore' ) {
@@ -367,6 +332,42 @@ if($message['type']=='text') {
                     'type' => 'text',
                     'text' => 'pinter kamu '.$profil->displayName
                 )
+            )
+        );
+    }
+}
+
+//pesan bergambar
+if($message['type']=='text') {
+	    if ($command == 'Assalamualaikum' || $command == 'Assalamualaikum wr wb' ) {
+
+        $balas = array(
+            'replyToken' => $replyToken,
+            'messages' => array(
+                array (
+  'type' => 'template',
+  'altText' => 'LOVE FIS mengirim sticker',
+  'template' => 
+  array (
+    'type' => 'image_carousel',
+    'columns' => 
+    array (
+      0 => 
+      array (
+        'imageUrl' => 'https://stickershop.line-scdn.net/stickershop/v1/sticker/16700754/IOS/sticker_animation@2x.png;compress=true',
+        'action' => 
+        array (
+          'type' => 'message',
+          'text' => 'Assalamualaikum',
+        ),
+      ),
+    ),
+  ),
+),
+                array(
+                    'type' => 'text',
+                    'text' => 'Waalaikumsalam kk '.$profil->displayName.'
+                ),
             )
         );
     }
